@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Costume Advice for Guests</title>
+    
+</head>
+<body>
+
+    <h1>Welcome to the Costume Party!</h1>
+    <p>Select the type of guest to get costume advice:</p>
+
+    <select id="guestTypeDropdown">
+        <option value="Wizard">Wizard</option>
+        <option value="Dragon" selected>Dragon</option>
+        <option value="Fairy">Fairy</option>
+        <option value="Unicorn">Unicorn</option>
+        <option value="Other">Other</option>
+    </select>
+
+    
+    
+    <button class="w3-button w3-gradiant w3-border w3-border-black w3-round-large"onclick="selectCreature()">Get Costume Info</button>
+
+    <p id="costumeInfo"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
