@@ -1,0 +1,74 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: skyblue;
+
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    border-radius: 50%;
+
+    position: relative;
+
+    animation: MyFirstAnimation 7s infinite, ChangeColourOfSun 7s infinite, SunBounce 7s infinite/*, SunBounceTwo 7s infinite*/;
+
+}
+
+@keyframes MyFirstAnimation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ChangeColourOfSun {
+    0% {
+        background-color: #FFD700;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: #FFD700;
+    }
+}
+
+@keyframes SunBounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes SunBounceTwo {
+    /*
+    to {
+        scale: 2;
+    }
+    */
+     0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-40px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+
+
+}
