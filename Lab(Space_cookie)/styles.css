@@ -43,5 +43,5 @@ body {
 }
 
 .space-object.enlarged {
-    transform: scale(1.5); /* Enlarges the icon when clicked */
+    transform: scale(4); /* Enlarges the icon when clicked */
 }
